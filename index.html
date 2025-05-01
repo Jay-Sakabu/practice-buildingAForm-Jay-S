@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <link rel="stylesheet", href="index.css">
+</head>
+<body>
+    <div class="container">  
+        <h1>Feedback Form</h1>
+        <form action="PLACEHOLDER" method="POST"> <!-- TODO: Replace placeholder with actual action--> 
+            
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name" placeholder="Enter your first name" required>
+            
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last-name" placeholder="Enter your last name" required>
+            <br><br>
+            
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            <br><br>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            <!-- TODO: Add confirm password? Might just be a login page type thing-->
+            <br><br>
+            
+            <fieldset>
+                <legend>Feedback Category:</legend>
+                <label for="category">Select a category:</label>
+                <select id="category" name="category" required>
+                    <option value="">Please choose an option</option>
+                    <option value="websiteDesign">Website Design</option>
+                    <option value="contentQuality">Content Quality</option>
+                    <option value="performance">Performance</option>
+                </select>
+            </fieldset>
+            <br>
+            
+            <fieldset>
+                <legend>Preferred Contact Method:</legend>
+                <input type="radio" id="contact-text" name="contact-method" value="textPhone" required checked>
+                <label for="contact-text">Text</label>
+                <input type="radio" id="contact-phone" name="contact-method" value="phone" required>
+                <label for="contact-phone">Phone</label>
+                <input type="radio" id="contact-email" name="contact-method" value="email" required>
+                <label for="contact-email">Email</label>
+            </fieldset>
+            <br>
+            
+            <fieldset>
+                <legend>Additional Features of Interest:</legend>
+                <input type="checkbox" id="feature-twentyDollars" name="features" value="twentyDollars">
+                <label for="feature-twentyDollars">$20</label>
+                <br>
+                <input type="checkbox" id="feature-negativeTwentyDollars" name="features" value="negativeTwentyDollars">
+                <label for="feature-negativeTwentyDollars">-$20</label>
+                <br>
+                <input type="checkbox" id="feature-notifications" name="features" value="pushNotifications">
+                <label for="feature-notifications">Push Notifications</label>
+            </fieldset>
+            <br>
+            
+            <label for="comments">Comments:</label>
+            <br>
+            <textarea id="comments" name="comments" placeholder="Enter comments here..." required></textarea>
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    </body>
+    </html>
